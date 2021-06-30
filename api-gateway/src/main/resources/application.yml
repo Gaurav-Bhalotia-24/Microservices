@@ -14,7 +14,7 @@ spring:
         - id: fd-service
           uri: lb://fixed-deposit-service
           predicates:
-            - Path=/fd/**
+            - Path=/fixeddeposit/**
       enabled: true
       discovery:
         locator:
