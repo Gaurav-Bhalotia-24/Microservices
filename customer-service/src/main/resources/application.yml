@@ -1,0 +1,38 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: customer-service
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/my-discovery-server/eureka
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+
+#
+#    leaseRenewalIntervalInSeconds: 10
+#    statusPageUrlPath: /info
+#    healthCheckUrlPath: /health
+
+
+#defaultZone: ${EUREKA_URI:http://localhost:8761/my-discovery-server/eureka}
+
+
+#eureka.client.service-url="http://localhost:8761/eureka"
+#
+#spring.application.name=booking-service
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+#eureka.client.instance.preferIpAddress = true
+
+
+
+
+
